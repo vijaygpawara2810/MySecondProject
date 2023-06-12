@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarInfo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/63390fb72f.js" crossorigin="anonymous"></script>
+    <script src="../myminiProject/index.js"></script>
+
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+           <div class="logo">
+                <img src="../myminiProject/images/brands/sports-car-logo-png.png" alt="wrong path">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Car Valuation</a></li>
+                <li><a href="#footer">ContactUs</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" class="navinput" placeholder="Search">
+                <i class="fa-brands fa-searchengin fa-lg"></i>
+               </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="container"> -->
+    <!-- Example split danger button -->
+    <!-- <div class="btn-group">
+            <button type="button" class="btn btn-danger">New Car</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">New Car</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div> -->
+    <!-- Example split danger button -->
+    <!-- <div class="btn-group">
+            <button type="button" class="btn btn-danger">Used Car</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Car in  Your City</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Sell Car</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">CarDekho Services</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">News&Review</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">CarDekho Ventures</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">More</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </div>
+    </div>  -->
+
+
+<div class="blank">
+
+</div>
+ 
+    <div class="container mt-5">
+        <div id="carouselExampleCaptions" class="carousel slide  d-flex justify-content-center" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../myminiProject/images/brands/fronx-exterior-front-view-2.jpg" class="d-block w-75"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="font-size: 50px;">Maruti Fronx</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../myminiProject/images/2022-Maruti-Suzuki-Brezza-7.jpg" class="d-block w-75" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../myminiProject/images/brands/ev.jpg" class="d-block w-75" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+ 
+    <!-- second  div cards  -->
+
+    <div class="container" style=" height: 400px; text-align: center; margin-top: 10px; background-color: white;
+    margin: 50px 0px 50px 130px;">
+        <h2>Most Searched Cars</h2>
+        <div class="row ">
+
+            <div class="col-2">
+            </div>
+
+
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="https://www.cardekho.com/carmodels/Maruti/Maruti_Baleno"> <img
+                                src="../myminiProject/images/baleno.jpg" alt="" width="270px" height="180px"></a>
+                    </div>
+                    <h3>Baleno</h3>
+                    <div style="width: 300px; height: 40px;border: 2px solid orangered;">Check Offer
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="https://www.cardekho.com/maruti/swift"><img
+                                src="../myminiProject/images/marutisuzukiswift.jpg" alt="" width="270px"
+                                height="180px"></a>
+                        <h2>Swift</h2>
+                        <div style="width: 300px; height: 40px; border: 2px solid orangered;">Check Offer
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="https://www.cardekho.com/carmodels/Renault/Renault_KWID"><img
+                                src="../myminiProject/images/kwid.jpg" alt="" width="275px" height="180px"></a>
+                    </div>
+                    <h2>Kwid</h2>
+                    <div style="width:300px; height:40px;  border: 2px  solid orangered;">Check Offer
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-2">
+        </div>
+    </div>
+
+
+    <!-- third div cards carousel -->
+
+    <div class="container-fluid bg-white">
+        <h2>Recommended Cars For You</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+
+                        <div class="col-2">
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body" style="margin-left: 10px; ">
+                                    <a href="https://www.cardekho.com/carmodels/Renault/Renault_KWID"><img
+                                            src="../myminiProject/images/2022-Maruti-Suzuki-Brezza-7.jpg" alt=""
+                                            width="270px" height="180px"></a>
+
+                                    <h3>Brezza</h3>
+                                    <div style="width: 300px; height: 40px; border: 2px solid orangered;">Check Offer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body" style="margin-left: 10px; ">
+                                    <a href="https://www.cardekho.com/maruti/swift-dzire#leadForm"> <img
+                                            src="../myminiProject/images/Dsize.jpg" alt="" width="270px"
+                                            height="180px"></a>
+                                    <h2>Dzire</h2>
+                                    <div style="width: 300px; height: 40px; border: 2px solid orangered;">Check Offer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body" style="margin-left: 10px;">
+                                    <a href="https://www.cardekho.com/tata/altroz"><img
+                                            src="../myminiProject/images/altroz.jpg" alt="" width="275px"
+                                            height="180px"></a>
+                                </div>
+                                <h2>Altroz</h2>
+                                <div style="width:300px; height:40px;  border: 2px  solid orangered;">Check Offer
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                        </div>
+
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="col-2">
+                        </div>
+
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="https://www.cardekho.com/hyundai/i20-n-line"><img
+                                            src="../myminiProject/images/i20.jpg" alt="" width="270px"
+                                            height="180px"></a>
+
+                                    <h3>i20</h3>
+                                    <div style="width: 300px; height: 40px;border: 2px solid orangered;">Check Offer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body" style="margin-left: 10px; ">
+                                    <a href="https://www.cardekho.com/maruti/fronx#leadForm"><img
+                                            src="../myminiProject/images/fronx.jpg" alt="" width="270px"
+                                            height="180px"></a>
+                                    <h2>Fronx</h2>
+                                    <div style="width: 300px; height: 40px; border: 2px solid orangered;">Check Offer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="https://www.cardekho.com/nissan/magnite#leadForm"><img
+                                            src="../myminiProject/images/nissan.jpg" alt="" width="275px"
+                                            height="180px"></a>
+                                </div>
+                                <h2>Nissan</h2>
+                                <div style="width:300px; height:40px;  border: 2px  solid orangered;">Check Offer
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-2">
+                    </div>
+
+
+
+
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+
+                        <div class="col-2">
+                        </div>
+
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body" style="margin-left: 10px;">
+                                    <a href="https://www.cardekho.com/carmodels/Maruti/Maruti_Baleno#leadForm"><img
+                                            src="../myminiProject/images/baleno.jpg" alt="" width="270px"
+                                            height="180px"></a>
+                                    <h3>Baleno</h3>
+                                    <div style="width: 300px; height: 40px;border: 2px solid orangered;">Check Offer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body" style="margin-left: 10px; ">
+                                    <a href="https://www.cardekho.com/hyundai/venue-n-line#leadForm"> <img
+                                            src="../myminiProject/images/venue.jpg" alt="" width="270px"
+                                            height="180px"></a>
+                                    <h2>Venue</h2>
+                                    <div style="width: 300px; height: 40px; border: 2px solid orangered;">Check Offer
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <a href="https://www.cardekho.com/maruti/swift"><img
+                                            src="../myminiProject/images/marutisuzukiswift.jpg" alt="" width="275px"
+                                            height="180px"></a>
+                                </div>
+                                <h2>Swift</h2>
+                                <div style="width:300px; height:40px;  border: 2px  solid orangered;">Check Offer
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-2">
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="space1">
+
+    </div>
+
+
+    <!--  fourth div Start -->
+
+    <div class="div4">
+
+        <div class="ad">
+            <img src="../myminiProject/images/tatacar.jpg" alt="" usemap="#work">
+            <map name="work">
+                <!-- harrier -->
+                <area shape="poly" coords="122,301,77,321,38,338,39,386,155,393,189,346,216,332,197,304"
+                    href="https://cars.tatamotors.com/suv/harrier" alt="wronnghnnn" class="cod">
+                <!-- nexon -->
+                <area shape="poly" coords="264,314,226,338,196,350,195,396,299,401,334,361,375,338,366,316"
+                    href="https://cars.tatamotors.com/suv/nexon" alt="wrong path">
+                <!-- tiago -->
+                <area shape="poly" coords="416,331,380,357,340,377,411,446,419,515,394,507,330"
+                    href="https://cars.tatamotors.com/cars/tiago" alt="tiago">
+
+                <!-- punch -->
+                <area shape="poly" coords="563,323,546,357,527,387,532,437,695,436,689,370,663,321"
+                    href="https://cars.tatamotors.com/suv/punch" alt="punch">
+
+                <!-- altroz -->
+                <area shape="poly" coords="730,324,704,345,708,392,780,425,903,408,890,364,815,329"
+                    href="https://cars.tatamotors.com/cars/altroz" alt="altroz">
+
+                <!-- tigor -->
+                <area shape="poly" coords="857,324,905,359,925,399,1046,395,1036,358,950,323"
+                    href="https://cars.tatamotors.com/cars/tigor" alt="tigor">
+
+                <!-- safari -->
+                <area shape="poly" coords="1004,306,987,332,1049,351,1067,379,1189,370,1173,335,1131,330,1097,306"
+                    href="https://cars.tatamotors.com/suv/safari" alt="safari">
+
+            </map>
+
+
+
+            <form action="">
+                <label for=""></label>
+            </form>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- fourth div End  -->
+    <div class="tp2">
+        <h2 class="tp">Top Brands Car</h2>
+    </div>
+    <!-- fifth div  Start -->
+    <div class="main">
+
+        <div>
+            <a href="https://www.tatamotors.com/"><img src="../myminiProject/images/brands/tata.jpg" class="slide1"
+                    alt=""></a>
+            <a href="https://auto.mahindra.com/"><img src="../myminiProject/images/brands/mahindra.jpg" class="slide1"
+                    alt=""></a>
+        </div>
+        <div>
+            <a href="https://www.globalsuzuki.com/"><img src="../myminiProject/images/brands/suzuki.jpg" class="slide1"
+                    alt=""></a>
+            <a href="https://www.renault.co.in/"><img src="../myminiProject/images/brands/renult.jpg" class="slide1"
+                    alt=""></a>
+        </div>
+        <div>
+            <a href="https://www.mercedes-benz.co.in/passengercars.html?group=all&subgroup=see-all&view=BODYTYPE"> <img
+                    src="../myminiProject/images/brands/mercedes.jpg" class="slide1" alt=""></a>
+            <a href="https://www.audi.in/in/web/en.html"><img src="../myminiProject/images/brands/audi.jpeg"
+                    class="slide1" alt=""></a>
+        </div>
+        <div>
+            <a href="https://www.hyundai.com/in/en"><img src="../myminiProject/images/brands/hyudai.jpg" class="slide1"
+                    alt=""></a>
+            <a href="https://www.ford.com/"><img src="../myminiProject/images/brands/ford.jpg" class="slide1"
+                    alt=""></a>
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+    <!-- fifth div  End -->
+
+
+
+    <!-- footer start -->
+    <footer id="footer">
+
+        <div class="footerContainer">
+            <div class="socialIcon">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.googleplus.com"><i class="fa-brands fa-google-plus"></i></a>
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footerNav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Our Team</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footerBottam">
+            <p>Copyright &copy;2022 Designed By <span class="designer">Vijay</span></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
